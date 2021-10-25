@@ -1,0 +1,39 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: #333;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    flex-direction: row; /* define si las cajas van a estar en eje x o eje y */
+    flex-wrap: nowrap;/* define si las cajas se envuelven o siguen de largo */
+    flex-flow: row nowrap;/* es un shortband de flex direction y flex wrap */
+    justify-content: flex-start;/* define alineacion de los hijos en el eje principal */
+    align-content: flex-start; /* define alineacion en eje y, pero funciona cuando hay mas de una linea */
+    align-items: stretch;/* define alineacion de los hijos de una linea */
+}
+.items{
+    background-color: #666;
+    border: medium solid#999;
+    /*width: 20%;
+    height: 20%;
+    */
+    flex-shrink: 1;/* cuando la caja no tenga espacio sobrante se encogen las cajas */
+    flex-grow: 0; /* cuando la caja tenga espacio sobrante crecen las cajas */
+    flex-basis: auto;/* si la caja es row representa el width y lo contario con height
+    tamaño del hijo dentro de la caja flexbox*/
+    flex: 0 1 auto;/* es un shortband de flex grow y flex shrink, flex basis */
+    order: 0; /* representa el orden de los hijos en la caja flexbox
+    un valor menor siempre ira antes que un valor mayor*/
+    align-self: 1; /* sobreescribe el valor que tenga align items, para el elemento especificado
+    si esta en row se alinea en eje y lo contrario con eje x*/
+
+}
+.items:nth-child(2){
+    order: 1;
+}
