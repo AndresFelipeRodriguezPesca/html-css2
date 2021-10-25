@@ -1,0 +1,7 @@
+.hero-image{
+    background-image: url("https://placeimg.com/1280/720/animals");
+   background-repeat: no-repeat;
+}
+.hero-image div{
+    background-color: rgba(0,0,0,.45);
+}

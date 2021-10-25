@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+.flex-item{
+    border: thin solid #CCC;
+    flex: 0 0 100%;
+}
+
+@media (min-width: 576px) {
+    .flex-item{
+        flex: 0 0 50%;
+    }
+     }
+
+@media (min-width: 768px) {
+     .flex-item{
+        flex: 0 0 33.333333%;
+    }
+}
+
+@media (min-width: 992px) {
+     .flex-item{
+        flex: 0 0 25%;
+    }
+}
+@media (min-width: 1200px) {
+      .flex-item{
+        flex: 0 0 12.5%;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .flex-item{
+        flex: 0 0 10%;
+    } }

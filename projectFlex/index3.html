@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Boopstrap</title>
+            <link href="style3.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<main class="flex-grow-1">
+    <h1>Hello world</h1>
+         <section class="bg-info text-white d-flex flex-column align-items-center flex-lg-row justify-content-lg-around ">
+        <article class="flex-item">Item 1</article>
+         <article class="flex-item">Item 2</article>
+         <article class="flex-item">Item 3</article>
+         <article class="flex-item">Item 4</article>
+         <article class="flex-item">Item 5</article>
+         </section>
+
+    <section class="hero-image min-vh-100 text-white">
+        <div class="min-vh-100 d-flex justify-content-center align-items-center text-center">
+            <h1> Flexbox is cool bitch </h1>
+        </div>
+
+    </section>
+    <div class="container">
+            <section class="row align-items-lg-center">
+          <article class="col-12 col-lg-6">
+              <p>El Gobierno ha utilizado este proceso para estimular el descrédito de nuestra democracia ante propios
+                  y ante la comunidad internacional. La democracia más extensa y menos interrumpida de América Latina,
+                  que ha superado todas las imperfecciones sin claudicar ante el terrorismo, queda igual a dictaduras,
+                  y el narco terrorismo de la FARC como una legítima insurgencia civil de aquellas que enfrentaron esas dictaduras</p>
+          </article>
+          <article class="col-12 col-lg-6">
+              <img src="https://placeimg.com/620/620/people" class="img-fluid">
+          </article>
+      </section>
+      <section class="row align-items-lg-center">
+          <article class="col-12 col-lg-6 order-lg-1 ">
+              <p >El Gobierno ha utilizado este proceso para estimular el descrédito de nuestra democracia ante propios
+                  y ante la comunidad internacional. La democracia más extensa y menos interrumpida de América Latina,
+                  que ha superado todas las imperfecciones sin claudicar ante el terrorismo, queda igual a dictaduras,
+                  y el narco terrorismo de la FARC como una legítima insurgencia civil de aquellas que enfrentaron esas dictaduras</p>
+          </article>
+          <article class="col-12 col-lg-6">
+              <img src="https://placeimg.com/620/620/arch" class="img-fluid">
+          </article>
+      </section>
+    </div>
+</main>
+<footer class="bg-dark text-white">
+    <h4>Sticky Footer Boopstrap</h4>
+</footer>
+
+</body>
+</html>
